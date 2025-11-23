@@ -1,4 +1,5 @@
 import {Link} from "react-router-dom";
+import modernDesign from '/src/assets/ux-ui-design.png'
 
 function WhatDoWeOffer() {
     return(
@@ -10,7 +11,7 @@ function WhatDoWeOffer() {
                 <div className="card-container">
                     <div className="card">
                         <div className="card-heading">
-                            <img src="/src/assets/ux-ui-design.png" alt="modern design"/>
+                            <img src={modernDesign} alt="modern design"/>
                             <h3>Modern Designs</h3>
                         </div>
                         <p>Beautiful, responsive websites that captivate your audience and drive engagement across all devices.</p>
