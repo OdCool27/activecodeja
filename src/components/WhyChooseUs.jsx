@@ -16,7 +16,7 @@ function WhyChooseUs(){
 
                        <div className="card">
                            <div className="cardImage">
-                               <img src="/src/assets/quick-turnaround.png" alt="quick turnaround"/>
+                               <img src="../assets/quick-turnaround.png" alt="quick turnaround"/>
                            </div>
                            <div className="cardText">
                                <h3>Quick Turnaround Time</h3>
@@ -26,7 +26,7 @@ function WhyChooseUs(){
 
                        <div className="card">
                            <div className="cardImage">
-                               <img src="/src/assets/affordable.png" alt="affordable fees"/>
+                               <img src="../assets/affordable.png" alt="affordable fees"/>
                            </div>
                            <div className="cardText">
                                <h3>Affordable & Transparent Fees</h3>
@@ -36,7 +36,7 @@ function WhyChooseUs(){
 
                        <div className="card">
                            <div className="cardImage">
-                               <img src="/src/assets/support.png" alt="customer support"/>
+                               <img src="../assets/support.png" alt="customer support"/>
                            </div>
                            <div className="cardText">
                                <h3>Ongoing Customer Support</h3>
@@ -46,7 +46,7 @@ function WhyChooseUs(){
 
                        <div className="card">
                            <div className="cardImage">
-                               <img src="/src/assets/custom-designs.png" alt="custom designs"/>
+                               <img src="../assets/custom-designs.png" alt="custom designs"/>
                            </div>
                            <div className="cardText">
                                <h3>Custom Designs</h3>

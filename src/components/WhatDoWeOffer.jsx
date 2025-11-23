@@ -1,5 +1,5 @@
 import {Link} from "react-router-dom";
-import modernDesign from '/src/assets/ux-ui-design.png'
+import modernDesign from '../assets/ux-ui-design.png'
 
 function WhatDoWeOffer() {
     return(
@@ -19,7 +19,7 @@ function WhatDoWeOffer() {
 
                     <div className="card">
                         <div className="card-heading">
-                            <img src="/src/assets/development.png" alt="business driven tech"/>
+                            <img src="../assets/development.png" alt="business driven tech"/>
                             <h3>Business-Driven Tech</h3>
                         </div>
                         <p>Smart technology solutions that solve real business problems and drive measurable growth.</p>
@@ -27,7 +27,7 @@ function WhatDoWeOffer() {
 
                     <div className="card">
                         <div className="card-heading">
-                            <img src="/src/assets/maintenance.png" alt="maintenance & support"/>
+                            <img src="../assets/maintenance.png" alt="maintenance & support"/>
                             <h3>Maintenance & Support</h3>
                         </div>
                         <p>Reliable ongoing support to keep your digital presence running smoothly and securely.</p>
