@@ -1,0 +1,155 @@
+/* === PAGE BACKGROUND === */
+body {
+    margin: 0;
+    font-family: "Inter", Arial, sans-serif;
+}
+
+/* === FORM CONTAINER === */
+.intake-form {
+    background: #ffffff;
+    width: 100%;
+    max-width: 500px;
+    min-width: 280px;
+
+    margin: 40px auto;
+    padding: 25px;
+
+    border-radius: 14px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* === HEADINGS === */
+.intake-form h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: center;
+    color: #222;
+}
+
+.intake-form h3 {
+    margin-top: 10px;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.intake-form h4 {
+    font-size: 1.05rem;
+    color: #333;
+    margin-top: 20px;
+}
+
+/* === INPUT LABEL BLOCKS === */
+.intake-form label {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    font-size: 0.9rem;
+    color: #222;
+}
+
+/* === INPUTS & TEXTAREAS === */
+.intake-form input,
+.intake-form select,
+.intake-form textarea {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+
+    font-size: 0.95rem;
+    font-family: inherit;
+
+    transition: border 0.2s ease, box-shadow 0.2s ease;
+}
+
+.intake-form input:focus,
+.intake-form select:focus,
+.intake-form textarea:focus {
+    border-color: #1a8cd8;
+    box-shadow: 0 0 0 2px rgba(26, 140, 216, 0.2);
+    outline: none;
+}
+
+.intake-form textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+/* === CHECKBOX GROUP === */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.checkbox-group label {
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+/* === SECTION WRAPPER === */
+.section {
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 10px;
+
+    background: #f7fbff;
+    border: 1px solid #e5eef5;
+}
+
+/* === SUBMIT BUTTON === */
+.submit-btn {
+    padding: 12px 16px;
+
+    background: #1a8cd8;
+    color: white;
+    border: none;
+
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.submit-btn:hover {
+    background: #1474b3;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    align-items: center;
+    margin-top: 10px;
+}
+
+/* === RESPONSIVENESS === */
+@media (max-width: 350px) {
+    .intake-form {
+        padding: 18px;
+    }
+
+    .intake-form h2 {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.success-message,
+.error-message {
+    animation: fadeIn 0.6s ease forwards;
+}
