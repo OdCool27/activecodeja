@@ -1,8 +1,8 @@
 import '/src/index.css'
-import quickTurnaround from '../assets/quick-turnaround.png'
-import affordableFees from '../assets/affordable.png'
-import customerSupport from '../assets/support.png'
-import customDesigns from '../assets/custom-designs.png'
+import quickTurnaround from '../assets/quick-turnaround.webp'
+import affordableFees from '../assets/affordable.webp'
+import customerSupport from '../assets/support.webp'
+import customDesigns from '../assets/custom-designs.webp'
 
 function WhyChooseUs(){
     return(
