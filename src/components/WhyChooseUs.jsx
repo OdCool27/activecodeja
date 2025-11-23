@@ -1,4 +1,9 @@
 import '/src/index.css'
+import quickTurnaround from '../assets/quick-turnaround.png'
+import affordableFees from '../assets/affordable.png'
+import customerSupport from '../assets/support.png'
+import customDesigns from '../assets/custom-designs.png'
+
 function WhyChooseUs(){
     return(
         <>
@@ -16,7 +21,7 @@ function WhyChooseUs(){
 
                        <div className="card">
                            <div className="cardImage">
-                               <img src="../assets/quick-turnaround.png" alt="quick turnaround"/>
+                               <img src={quickTurnaround} alt="quick turnaround"/>
                            </div>
                            <div className="cardText">
                                <h3>Quick Turnaround Time</h3>
@@ -26,7 +31,7 @@ function WhyChooseUs(){
 
                        <div className="card">
                            <div className="cardImage">
-                               <img src="../assets/affordable.png" alt="affordable fees"/>
+                               <img src={affordableFees} alt="affordable fees"/>
                            </div>
                            <div className="cardText">
                                <h3>Affordable & Transparent Fees</h3>
@@ -36,7 +41,7 @@ function WhyChooseUs(){
 
                        <div className="card">
                            <div className="cardImage">
-                               <img src="../assets/support.png" alt="customer support"/>
+                               <img src={customerSupport} alt="customer support"/>
                            </div>
                            <div className="cardText">
                                <h3>Ongoing Customer Support</h3>
@@ -46,7 +51,7 @@ function WhyChooseUs(){
 
                        <div className="card">
                            <div className="cardImage">
-                               <img src="../assets/custom-designs.png" alt="custom designs"/>
+                               <img src={customDesigns} alt="custom designs"/>
                            </div>
                            <div className="cardText">
                                <h3>Custom Designs</h3>
