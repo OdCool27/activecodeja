@@ -1,4 +1,4 @@
-import footerLogo from '../assets/footerLogo.png'
+import footerLogo from '../assets/footerlogo.png'
 import instagramLogo from '../assets/instagram_logo.svg'
 import githubLogo from '../assets/github_logo.svg'
 import linkedinLogo from '../assets/linkedin_logo.svg'
