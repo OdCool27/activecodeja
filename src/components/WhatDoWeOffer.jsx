@@ -2,15 +2,17 @@ import {Link} from "react-router-dom";
 import modernDesign from '../assets/ux-ui-design.png'
 import development from '../assets/development.png'
 import maintenance from '../assets/maintenance.png'
+import {useInView} from "./useInView.jsx";
 
 function WhatDoWeOffer() {
+    const [ref, isVisible] = useInView();
     return(
         <>
-            <section id="what-do-we-offer">
+            <section id="what-do-we-offer" ref={ref} className={`${isVisible ? "bg-fade-in" : ""}`}>
                 <h2>What Do We Offer?</h2>
                 <p>We provide a comprehensively tailored web solutions for your business needs.</p>
 
-                <div className="card-container">
+                <div className={`card-container ${isVisible ? "content-rise" : ""}`}>
                     <div className="card">
                         <div className="card-heading">
                             <img src={modernDesign} alt="modern design"/>

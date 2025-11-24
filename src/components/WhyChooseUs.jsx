@@ -1,12 +1,12 @@
 import '/src/index.css'
-import {UseInView} from "./UseInView.jsx";
+import {useInView} from "./useInView.jsx";
 import quickTurnaround from '../assets/quick-turnaround.webp'
 import affordableFees from '../assets/affordable.webp'
 import customerSupport from '../assets/support.webp'
 import customDesigns from '../assets/custom-designs.webp'
 
 function WhyChooseUs(){
-    const [ref, isVisible] = UseInView();
+    const [ref, isVisible] = useInView();
     return(
         <>
            <section id="why-choose-us" ref={ref} className={`${isVisible ? "bg-fade-in" : ""}`}>

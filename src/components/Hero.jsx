@@ -1,9 +1,9 @@
 import '/src/index.css';
 import {useNavigate} from "react-router-dom";
-import {UseInView} from "./UseInView.jsx";
+import {useInView} from "./useInView.jsx";
 
 function Hero() {
-    const [ref, isVisible] = UseInView();
+    const [ref, isVisible] = useInView();
     const navigate = useNavigate();
     return(
         <section id="hero-section" ref={ref} className={`${isVisible ? "bg-fade-in" : ""}`}>
