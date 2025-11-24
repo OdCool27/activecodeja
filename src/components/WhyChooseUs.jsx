@@ -1,20 +1,22 @@
 import '/src/index.css'
+import {UseInView} from "./UseInView.jsx";
 import quickTurnaround from '../assets/quick-turnaround.webp'
 import affordableFees from '../assets/affordable.webp'
 import customerSupport from '../assets/support.webp'
 import customDesigns from '../assets/custom-designs.webp'
 
 function WhyChooseUs(){
+    const [ref, isVisible] = UseInView();
     return(
         <>
-           <section id="why-choose-us">
-               <div className="container">
+           <section id="why-choose-us" ref={ref} className={`${isVisible ? "bg-fade-in" : ""}`}>
+               <div className={`container ${isVisible ? "content-rise" : ""}`}>
                    <h2>Why Choose Use?</h2>
                    <p>
-                       When it comes to creating a website, you need more than just design—you need a partner who
-                       understands your goals and helps you reach them. At Active Code Ja, we focus on delivering
-                       solutions that give your business a professional edge, while making the process simple and
-                       stress-free.
+                       When it comes to building modern business solutions, you need more than just technical work—you
+                       need a partner who understands your objectives and helps you achieve them. At Active Code Ja, we
+                       deliver smart, reliable technology solutions that strengthen your brand, optimize your operations,
+                       and make the entire process seamless and stress-free.
                    </p>
 
                    <div className="why-choose-us-cards">

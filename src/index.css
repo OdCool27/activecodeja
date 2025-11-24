@@ -365,8 +365,8 @@ footer{
     margin-inline: auto;
     display: flex;
     flex-direction: column;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 #what-do-we-offer h2{
@@ -433,7 +433,7 @@ footer{
 /*About ActiveCodeja Section*/
 #about-activecodeja{
     background-color: white;
-    padding: 50px 0;
+    padding: 100px 0;
     box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -540,7 +540,7 @@ footer{
 /*Testimonials Section*/
 .testimonial-container{
     padding: 100px 0;
-    width:80%;
+    max-width:1200px;
     margin-inline: auto;
 }
 
@@ -551,7 +551,7 @@ footer{
 
 .testimonial-carousel{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
 }
 
@@ -592,3 +592,8 @@ footer{
     color: #494949;
 }
 
+@media screen and (max-width: 768px){
+    .testimonial-card{
+        width: 280px;
+    }
+}
