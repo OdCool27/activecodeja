@@ -317,34 +317,77 @@ footer{
 
 /* Hero Section */
 
-#hero-section{
-    background: url("assets/hero-background.webp") no-repeat center center/cover;
+#hero-section {
+    position: relative;
     width: 100%;
     min-height: 500px;
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
 }
 
-#hero-section h1{
+/* Background wrapper */
+.hero-background {
+    position: absolute;
+    inset: 0;
+    z-index: 0;
+}
+
+/* Individual slides */
+.hero-slide {
+    position: absolute;
+    inset: 0;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    opacity: 0;
+    transition: opacity 1.5s ease-in-out;
+}
+
+/* Active image */
+.hero-slide.active {
+    opacity: 1;
+}
+
+/* Dark overlay */
+.hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    z-index: 1;
+}
+
+/* Content */
+.hero-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+/* Text styling */
+#hero-section h1 {
     color: white;
     text-align: center;
     margin-top: 150px;
     margin-bottom: 0;
 }
 
-#hero-section p{
+#hero-section p {
     color: white;
     text-align: center;
     width: 50%;
     margin-inline: auto;
     min-width: 300px;
     font-size: var(--fs-22);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 10px 10px 30px rgba(0, 0, 0, 0.9);
     margin-top: 0;
 }
 
-.hero-btn-container{
+.hero-btn-container {
     display: flex;
     justify-content: center;
     gap: 30px;
@@ -352,12 +395,12 @@ footer{
     margin-bottom: 150px;
 }
 
-.portfolio-btn{
+.portfolio-btn {
     background-color: rgba(255, 255, 255, 0.4);
     border: 2px solid black;
     color: white;
-
 }
+
 
 /*What Do We Offer Section*/
 #what-do-we-offer{
@@ -411,7 +454,7 @@ footer{
     border-radius: 15px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
     min-height: 250px;
-    width: 320px;
+    width: 380px;
     padding: 0 15px;
     color: var(--primary-color);
     opacity: 0;
@@ -442,6 +485,8 @@ footer{
     gap: 10px;
     padding:15px 0;
     align-items: center;
+
+
 }
 
 #what-do-we-offer .card-container .card .card-heading img{
@@ -509,7 +554,7 @@ footer{
 
 /*Why Choose Us Section*/
 #why-choose-us{
-    background: linear-gradient(to right, var(--secondary-color), var(--tertiary-color));
+    background: linear-gradient(to right, var(--secondary-color), var(--primary-color));
     padding: 100px 0;
     color: white;
     text-align: center;
@@ -526,7 +571,7 @@ footer{
 }
 
 #why-choose-us .container{
-    width: 80%;
+    width: 85%;
     margin-inline: auto;
     display: flex;
     flex-direction: column;
@@ -551,7 +596,7 @@ footer{
     display: flex;
     justify-content: space-evenly;
     align-items: flex-start;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
     margin-top: 50px;
 }
@@ -560,7 +605,7 @@ footer{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    width: 280px;
+    width: 300px;
     background: white;
     border-radius: 15px;
     box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
@@ -601,6 +646,21 @@ footer{
     width: 100%;
     height: 200px;
     overflow: hidden;
+
+    /* order: vendor-prefixed gradient variant first (for some older WebKit),
+   then the standard gradient on mask-image */
+    -webkit-mask-image: -webkit-linear-gradient(top, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0) 100%);
+
+    /* keep sizing & repetition controlled */
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-size: 100% 100%;
+
+    /* optional: ensure mask uses alpha channel */
+    mask-mode: alpha;
 }
 
 .cardImage img{
@@ -641,7 +701,7 @@ footer{
     width: 45px;
     height: 45px;
     border-radius: 100%;
-    background-color: var(--primary-color);
+    background-color: #8484b8;
     color: white;
     border: 1px solid black;
     box-shadow: none;
@@ -658,17 +718,16 @@ footer{
 .testimonial-card{
     display: flex;
     flex-direction: column;
-    background-color: white;
     border-radius: 15px;
-    border: 1px solid black;
-    width: 300px;
-    padding: 10px;;
-    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+    min-width: 300px;
+    max-width: 800px;
+    padding: 10px;
 }
 
 .testimonial-card p{
     font-style: italic;
-
+    font-size: var(--fs-22);
+    color: var(--primary-color);
 }
 
 .testimonial-card h4{

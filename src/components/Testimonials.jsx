@@ -3,7 +3,13 @@ import { useState, useEffect } from "react";
 
 const testimonialData = [
     { quote: "Testimonial here", name: "Terry-Ann Hines", title: "Co-Founder of CORE Accounting Ja" },
-    { quote: "Testimonial here", name: "Shellion Rhoden", title: "Co-Founder of Events4Unurs" },
+    { quote: "Working with Mr. Odane Collins of ActiveCode.Ja has been an outstanding experience. He developed the Events4U" +
+            " website with exceptional professionalism and creativity.\n" + "From the very beginning, Mr. Collins showed" +
+            " genuine dedication to creating a website that was interactive, polished, and inviting for visitors. His keen" +
+            " attention to detail and thoughtful suggestions significantly elevated the overall look and functionality of" +
+            " the site.The final product exceeded our expectations, and we are truly proud of the website he delivered." +
+            " I wholeheartedly recommend ActiveCodeJa to anyone in need of a high-quality, professional website.",
+        name: "Shellion Rhoden", title: "Co-Founder of Events4Unurs" },
     { quote: "Testimonial here", name: "Phil Collins", title: "CEO of Vapfumi Concepts & Solutions" },
     { quote: "Testimonial here", name: "John Doe", title: "CEO of Company" },
 ];
@@ -21,8 +27,8 @@ function Testimonials() {
             const width = window.innerWidth;
 
             if (width < 768) setItemsToShow(1);
-            else if (width < 1000) setItemsToShow(2);
-            else setItemsToShow(3);
+            else if (width < 1000) setItemsToShow(1);
+            else setItemsToShow(1);
         };
 
         updateItemsToShow(); // run on mount

@@ -18,14 +18,25 @@ function ClientIntakeForm() {
         e.preventDefault();
 
         const form = e.target;
-        const data = new FormData(form);
+        const formData = new FormData(form);
 
-        // 🚨 Replace with your actual Formspree endpoint
-        const response = await fetch("https://formspree.io/f/myzvagwp", {
-            method: "POST",
-            body: data,
-            headers: { Accept: "application/json" },
-        });
+        // Convert FormData → plain object
+        const data = Object.fromEntries(formData.entries());
+
+        // Fix checkboxes (services) → get ALL values
+        data.services = services;
+
+        const response = await fetch(
+            "https://activecodeja.app.n8n.cloud/webhook/client-intake",
+            {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(data),
+            }
+        );
+
 
         if (response.ok) {
             setSuccess(true);
