@@ -11,7 +11,7 @@ function WhyChooseUs(){
         <>
            <section id="why-choose-us" ref={ref} className={`${isVisible ? "bg-fade-in" : ""}`}>
                <div className={`container ${isVisible ? "content-rise" : ""}`}>
-                   <h2>Why Choose Use?</h2>
+                   <h2>Why Choose Us?</h2>
                    <p>
                        When it comes to building modern business solutions, you need more than just technical work—you
                        need a partner who understands your objectives and helps you achieve them. At Active Code Ja, we
