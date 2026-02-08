@@ -2,16 +2,15 @@ import '/src/index.css';
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { useNavigate } from "react-router-dom";
+import img1 from "../assets/index_bkg1.jpg";
+import img2 from "../assets/index_bkg2.jpg";
+import img3 from "../assets/index_bkg3.jpg";
 
 function Hero() {
     const [ref, isVisible] = useInView();
     const navigate = useNavigate();
 
-    const images = [
-        "assets/index_bkg (1).jpg",
-        "assets/index_bkg (2).jpg",
-        "assets/index_bkg (3).jpg"
-    ];
+    const images = [img1, img2, img3];
 
     const [currentIndex, setCurrentIndex] = useState(0);
 
