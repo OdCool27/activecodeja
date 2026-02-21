@@ -2,14 +2,14 @@ import '/src/index.css';
 import { useState, useEffect } from "react";
 
 const testimonialData = [
-    { quote: "Testimonial here", name: "Terry-Ann Hines", title: "Co-Founder of CORE Accounting Ja" },
     { quote: "Working with Mr. Odane Collins of ActiveCode.Ja has been an outstanding experience. He developed the Events4U" +
             " website with exceptional professionalism and creativity.\n" + "From the very beginning, Mr. Collins showed" +
             " genuine dedication to creating a website that was interactive, polished, and inviting for visitors. His keen" +
             " attention to detail and thoughtful suggestions significantly elevated the overall look and functionality of" +
-            " the site.The final product exceeded our expectations, and we are truly proud of the website he delivered." +
+            " the site. The final product exceeded our expectations, and we are truly proud of the website he delivered." +
             " I wholeheartedly recommend ActiveCodeJa to anyone in need of a high-quality, professional website.",
         name: "Shellion Rhoden", title: "Co-Founder of Events4Unurs" },
+    { quote: "Testimonial here", name: "Terry-Ann Hines", title: "Co-Founder of CORE Accounting Ja" },
     { quote: "Testimonial here", name: "Phil Collins", title: "CEO of Vapfumi Concepts & Solutions" },
     { quote: "Testimonial here", name: "John Doe", title: "CEO of Company" },
 ];
@@ -60,6 +60,7 @@ function Testimonials() {
             <h2>Testimonials</h2>
 
             <div className="testimonial-carousel">
+
                 <button className="carousel-btn left" onClick={prevTestimonial}>&lt;</button>
 
                 <div className="testimonial-cards">
@@ -73,9 +74,12 @@ function Testimonials() {
                 </div>
 
                 <button className="carousel-btn right" onClick={nextTestimonial}>&gt;</button>
+
             </div>
         </div>
     );
 }
 
 export default Testimonials;
+//
+//

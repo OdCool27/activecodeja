@@ -1,9 +1,9 @@
 import '/src/index.css'
 import {useInView} from "./useInView.jsx";
-import quickTurnaround from '../assets/quick-turnaround.webp'
-import affordableFees from '../assets/affordable.webp'
-import customerSupport from '../assets/support.webp'
-import customDesigns from '../assets/custom-designs.webp'
+import quickTurnaround from '../assets/quick-turnaround.png'
+import affordableFees from '../assets/affordable.png'
+import customerSupport from '../assets/support.png'
+import customDesigns from '../assets/custom-design.png'
 
 function WhyChooseUs(){
     const [ref, isVisible] = useInView();
@@ -36,7 +36,7 @@ function WhyChooseUs(){
                                <img src={affordableFees} alt="affordable fees"/>
                            </div>
                            <div className="cardText">
-                               <h3>Affordable & Transparent Fees</h3>
+                               <h3>Transparent Fees</h3>
                                <p>No hidden fees. Clear, upfront pricing that fits your budget and delivers real value.</p>
                            </div>
                        </div>
@@ -46,7 +46,7 @@ function WhyChooseUs(){
                                <img src={customerSupport} alt="customer support"/>
                            </div>
                            <div className="cardText">
-                               <h3>Ongoing Customer Support</h3>
+                               <h3>Customer Support</h3>
                                <p>Our relationship doesn't end at launch. We provide continuous support and maintenance.</p>
                            </div>
                        </div>

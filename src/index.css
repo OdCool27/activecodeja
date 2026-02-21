@@ -661,9 +661,10 @@ footer{
 }
 
 .cardImage{
-    width: 100%;
-    height: 230px;
+    width: 70%;
+    height: auto;
     overflow: hidden;
+    margin-inline: auto;
 
     /* order: vendor-prefixed gradient variant first (for some older WebKit),
    then the standard gradient on mask-image */
@@ -686,6 +687,7 @@ footer{
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease-in-out;
+    padding: 20px;
 }
 
 .cardImage img:hover{
@@ -719,10 +721,8 @@ footer{
     width: 45px;
     height: 45px;
     border-radius: 100%;
-    background-color: #8484b8;
+    background-color: var(--secondary-color);
     color: white;
-    border: 1px solid black;
-    box-shadow: none;
 }
 
 .testimonial-cards{
@@ -738,7 +738,7 @@ footer{
     flex-direction: column;
     border-radius: 15px;
     min-width: 300px;
-    max-width: 800px;
+    max-width: 900px;
     padding: 10px;
 }
 
